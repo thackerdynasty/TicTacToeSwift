@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6FDEEE602D66CE0000795D14 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 6FDEEE5F2D66CE0000795D14 /* ArgumentParser */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		6FDEEE522D66CDDB00795D14 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FDEEE602D66CE0000795D14 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = TicTacToeSwift;
 			packageProductDependencies = (
+				6FDEEE5F2D66CE0000795D14 /* ArgumentParser */,
 			);
 			productName = TicTacToeSwift;
 			productReference = 6FDEEE542D66CDDB00795D14 /* TicTacToeSwift */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = 6FDEEE4B2D66CDDB00795D14;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6FDEEE5E2D66CE0000795D14 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6FDEEE552D66CDDB00795D14 /* Products */;
 			projectDirPath = "";
@@ -289,6 +298,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6FDEEE5E2D66CE0000795D14 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6FDEEE5F2D66CE0000795D14 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6FDEEE5E2D66CE0000795D14 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6FDEEE4C2D66CDDB00795D14 /* Project object */;
 }
