@@ -333,4 +333,7 @@ struct AI {
         }
         return 0
     }
+    mutating func reset() {
+        previousMoves = []
+    }
 }

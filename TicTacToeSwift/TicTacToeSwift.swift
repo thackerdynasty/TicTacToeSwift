@@ -81,6 +81,10 @@ struct TicTacToeSwift: ParsableCommand {
                     let square = readLine()!
                     if square == "r" {
                         print(shell("clear"))
+                        currentPlayer = "X"
+                        ai.reset()
+                        turn = 0
+                        lastMove = -1
                         board.reset()
                         board.printBoard()
                         continue
